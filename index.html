@@ -2,15 +2,14 @@
 <html lang="fr">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="script.js" defer></script>
     <title>Abderrahmane SAIDI - Développeur Full Stack</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-   <!-- Header Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+   <!-- Header Section -->
 <header id="header">
     <div class="main_nav">
       <div class="container">
@@ -21,42 +20,65 @@
             <li><a class="smoothscroll" href="#about">À propos</a></li>
             <li><a class="smoothscroll" href="#skills">Compétences</a></li>
             <li><a class="smoothscroll" href="#portfolio">Projets</a></li>
+            <li><a class="smoothscroll" href="#education">Formation</a></li>
+            <li><a class="smoothscroll" href="#experience">Expérience</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
     <div class="title">
-      <div><span class="typcn typcn-code-outline icon heading"></span></div>
+      <div class="code-animation">
+        <span class="code-symbol">&lt;</span>
+        <span class="code-symbol">/</span>
+        <span class="code-symbol">&gt;</span>
+      </div>
       <div class="smallsep heading"></div>
       <h1 class="heading">Abderrahmane SAIDI</h1>
-      <h2 class="heading">Développeur Full Stack à la Recheche d'une Alternance</h2>
-      <a class="smoothscroll" href="#about">
-      <div class="mouse">
-        <div class="wheel"></div>
+      <h2 class="heading">Développeur Full Stack à la Recherche d'une Alternance</h2>
+      <div class="header-badges">
+        <span class="badge">Java</span>
+        <span class="badge">Spring Boot</span>
+        <span class="badge">Angular</span>
+        <span class="badge">C#</span>
       </div>
-      </a> </div>
+      <a class="smoothscroll" href="#about">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </a>
+    </div>
     <a class="smoothscroll" href="#about">
-    <div class="scroll-down"></div>
-    </a> </header>
+      <div class="scroll-down"></div>
+    </a>
+</header>
     
-  <!-- About Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-    
-  <section id="about">
+  <!-- About Section -->
+  <section id="about" class="fade-in">
     <div class="container">
       <div class="row">
         <h1>À propos</h1>
         <div class="block"></div>
-        <p>Étudiant en développement Full-Stack (niveau Bac+3), je conçois des applications web performantes et évolutives en m’appuyant sur des technologies telles que Java, Spring Boot, Angular, SQL et Docker. Actuellement à la recherche d’une alternance en développement Full-Stack, je souhaite renforcer mes compétences techniques et contribuer activement à des projets concrets au sein d’une équipe dynamique.</p>
-      </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Étudiant en développement Full-Stack (niveau Bac+3), je conçois des applications web performantes et évolutives en m'appuyant sur des technologies telles que Java, Spring Boot, Angular, SQL et Docker. Actuellement à la recherche d'une alternance en développement Full-Stack, je souhaite renforcer mes compétences techniques et contribuer activement à des projets concrets au sein d'une équipe dynamique.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Projets Réalisés</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Technologies Maîtrisées</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   
-  <!-- Skills Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  <!-- Skills Section -->
   <section id="skills">
     <div class="container">
       <h1>Compétences & Services</h1>
@@ -67,7 +89,7 @@
         <div class="one-third column">
           <div class="service-card frontend-card">
             <div class="service-icon">
-              <span class="typcn typcn-device-desktop"></span>
+              <i class="ion-monitor"></i>
             </div>
             <h3>Développement Frontend</h3>
             <p>Création d'interfaces utilisateur modernes et responsives avec Angular, TypeScript, HTML5, CSS3 et Bootstrap. Expertise en tests unitaires et intégration continue.</p>
@@ -81,27 +103,27 @@
         <div class="one-third column">
           <div class="service-card backend-card">
             <div class="service-icon">
-              <span class="typcn typcn-cog-outline"></span>
+              <i class="ion-code-working"></i>
             </div>
             <h3>Développement Backend</h3>
-            <p>Conception d'architectures robustes avec Java Spring Boot, C# .NET, PHP et Symfony. Développement d'API REST et GraphQL avec gestion optimisée des bases de données.</p>
+            <p>Conception d'architectures robustes avec Java Spring Boot, C# .NET, PHP. Développement d'API REST et GraphQL avec gestion optimisée des bases de données.</p>
             <div class="service-tech">
               <span class="tech-badge">Java Spring</span>
               <span class="tech-badge">C# .NET</span>
-              <span class="tech-badge">PHP Symfony</span>
+              <span class="tech-badge">PHP</span>
             </div>
           </div>
         </div>
         <div class="one-third column">
           <div class="service-card devops-card">
             <div class="service-icon">
-              <span class="typcn typcn-cloud-storage-outline"></span>
+              <i class="ion-cloud"></i>
             </div>
             <h3>Base de Données & DevOps</h3>
-            <p>Optimisation des performances avec SQL Server, MySQL, JPA/Hibernate. Maîtrise de Git, CI/CD, et déploiement d'applications avec environnements virtualisés.</p>
+            <p>Optimisation des performances avec SQL Server, MySQL, JPA/Hibernate. Maîtrise de Git, et déploiement d'applications avec environnements virtualisés.</p>
             <div class="service-tech">
               <span class="tech-badge">SQL Server</span>
-              <span class="tech-badge">Git CI/CD</span>
+              <span class="tech-badge">Git</span>
               <span class="tech-badge">Docker</span>
             </div>
           </div>
@@ -119,7 +141,7 @@
                 <span class="skill-percentage">85%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress1" data-width="85%"></div>
+                <div class="skill-progress" style="width: 85%;"></div>
               </div>
             </div>
             
@@ -129,7 +151,7 @@
                 <span class="skill-percentage">80%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress2" data-width="80%"></div>
+                <div class="skill-progress" style="width: 80%;"></div>
               </div>
             </div>
             
@@ -139,7 +161,7 @@
                 <span class="skill-percentage">75%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress3" data-width="75%"></div>
+                <div class="skill-progress" style="width: 75%;"></div>
               </div>
             </div>
             
@@ -149,27 +171,27 @@
                 <span class="skill-percentage">85%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress4" data-width="85%"></div>
+                <div class="skill-progress" style="width: 85%;"></div>
               </div>
             </div>
             
             <div class="skill-item">
               <div class="skill-header">
-                <span class="skill-name">PHP & Symfony</span>
+                <span class="skill-name">PHP</span>
                 <span class="skill-percentage">70%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress5" data-width="70%"></div>
+                <div class="skill-progress" style="width: 70%;"></div>
               </div>
             </div>
             
             <div class="skill-item">
               <div class="skill-header">
-                <span class="skill-name">Git & CI/CD</span>
+                <span class="skill-name">Git</span>
                 <span class="skill-percentage">80%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress6" data-width="80%"></div>
+                <div class="skill-progress" style="width: 80%;"></div>
               </div>
             </div>
           </div>
@@ -183,7 +205,7 @@
             <h3>Stack Technique Complet</h3>
             <div class="tech-categories">
               <div class="tech-category">
-                <h4>Langages</h4>
+                <h4><i class="ion-code"></i> Langages</h4>
                 <div class="tech-tags">
                   <span class="tech-tag java">Java</span>
                   <span class="tech-tag csharp">C#</span>
@@ -194,18 +216,17 @@
               </div>
               
               <div class="tech-category">
-                <h4>Frameworks</h4>
+                <h4><i class="ion-settings"></i> Frameworks</h4>
                 <div class="tech-tags">
                   <span class="tech-tag spring">Spring Boot</span>
                   <span class="tech-tag angular">Angular</span>
                   <span class="tech-tag dotnet">.NET Framework</span>
-                  <span class="tech-tag symfony">Symfony</span>
                   <span class="tech-tag bootstrap">Bootstrap</span>
                 </div>
               </div>
               
               <div class="tech-category">
-                <h4>Bases de Données</h4>
+                <h4><i class="ion-ios-folder"></i> Bases de Données</h4>
                 <div class="tech-tags">
                   <span class="tech-tag sql">SQL Server</span>
                   <span class="tech-tag mysql">MySQL</span>
@@ -215,13 +236,12 @@
               </div>
               
               <div class="tech-category">
-                <h4>Outils & DevOps</h4>
+                <h4><i class="ion-ios-gear"></i> Outils & DevOps</h4>
                 <div class="tech-tags">
                   <span class="tech-tag git">Git</span>
-                  <span class="tech-tag cicd">CI/CD</span>
                   <span class="tech-tag vscode">VS Code</span>
                   <span class="tech-tag docker">Docker</span>
-                  <span class="tech-tag xampp">Kubernetes</span>
+                  <span class="tech-tag xampp">Kubernetes(Notion)</span>
                 </div>
               </div>
             </div>
@@ -231,9 +251,7 @@
     </div>
   </section>
   
-  <!-- Portfolio Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  <!-- Portfolio Section -->
   <section id="portfolio">
     <div class="container">
       <h1>Mes Projets</h1>
@@ -241,25 +259,41 @@
       <div class="row">
         <div class="six columns">
           <div class="project-card">
-            <link text="brek hna" href="www.koora.com">
-            <a href="https://github.com/Abderrahman-lab/expense01"><h4>Application de Gestion Financière</h4></a>
-            <p>Application Windows développée en C# avec .NET Framework pour gérer les dépenses et revenus. Utilisation de SQL Server avec optimisation des requêtes.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">.NET</span>
-              <span class="tech-tag">SQL Server</span>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Abderrahman-lab/expense01" target="_blank" class="project-link">
+                  <i class="ion-social-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Application de Gestion Financière</h4>
+              <p>Application Windows développée en C# avec .NET Framework pour gérer les dépenses et revenus. Utilisation de SQL Server avec optimisation des requêtes.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">.NET</span>
+                <span class="tech-tag">SQL Server</span>
+              </div>
             </div>
           </div>
         </div>
         <div class="six columns">
           <div class="project-card">
-            
-            <a href="https://github.com/Abderrahman-lab/digital-banking-spring-backend-master"><h4>Plateforme Bancaire Virtuelle</h4></a>
-            <p>Application web complète avec Java Spring Boot pour le backend et Angular pour le frontend. Gestion sécurisée des comptes et transactions.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">Spring Boot</span>
-              <span class="tech-tag">Angular</span>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Abderrahman-lab/digital-banking-spring-backend-master" target="_blank" class="project-link">
+                  <i class="ion-social-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Plateforme Bancaire Virtuelle</h4>
+              <p>Application web complète avec Java Spring Boot pour le backend et Angular pour le frontend. Gestion sécurisée des comptes et transactions.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Angular</span>
+              </div>
             </div>
           </div>
         </div>
@@ -267,23 +301,122 @@
       <div class="row">
         <div class="six columns">
           <div class="project-card">
-            <a href="https://github.com/Abderrahman-lab/projet-CSharp"><h4>Système de Gestion de Stock</h4></a>
-            <p>Application d'entreprise en C# avec ADO.NET pour optimiser le suivi des stocks de matériaux. Interface intuitive et reporting avancé.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">ADO.NET</span>
-              <span class="tech-tag">SQL Server</span>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Abderrahman-lab/projet-CSharp" target="_blank" class="project-link">
+                  <i class="ion-social-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Système de Gestion de Stock</h4>
+              <p>Application d'entreprise en C# avec ADO.NET pour optimiser le suivi des stocks de matériaux. Interface intuitive et reporting avancé.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">ADO.NET</span>
+                <span class="tech-tag">SQL Server</span>
+              </div>
             </div>
           </div>
         </div>
         <div class="six columns">
           <div class="project-card">
-            <a href="https://github.com/Abderrahman-lab/projet-stage"><h4>Application Gestion d'étudiants</h4></a>
-            <p>Site web de gestion des inscriptions et candidatures étudiantes. Développé en PHP avec MySQL pour une gestion complète des dossiers.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">PHP</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">HTML/CSS</span>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Abderrahman-lab/projet-stage" target="_blank" class="project-link">
+                  <i class="ion-social-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Application Gestion d'étudiants</h4>
+              <p>Site web de gestion des inscriptions et candidatures étudiantes. Développé en PHP avec MySQL pour une gestion complète des dossiers.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section (NOUVELLE SECTION) -->
+  <section id="education">
+    <div class="container">
+      <h1>Formation</h1>
+      <div class="block"></div>
+      <div class="education-timeline">
+        <div class="education-item slide-in-left">
+          <div class="education-year">2025 - 2027</div>
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="ion-university"></i>
+            </div>
+            <h3>Master en Ingénierie Informatique</h3>
+            <h4>Big Data & Cloud Computing</h4>
+            <p class="education-school">ENSET - Université Hassan II</p>
+            <p class="education-location"><i class="ion-location"></i> Casablanca, Maroc</p>
+            <div class="education-highlights">
+              <span class="highlight-badge">Big Data</span>
+              <span class="highlight-badge">Cloud Computing</span>
+              <span class="highlight-badge">Intelligence Artificielle</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-item slide-in-right">
+          <div class="education-year">2024 - 2026</div>
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="ion-laptop"></i>
+            </div>
+            <h3>Master en Architecture Web</h3>
+            <h4>Développement Full Stack</h4>
+            <p class="education-school">Digital School of Paris</p>
+            <p class="education-location"><i class="ion-location"></i> Vincennes, France</p>
+            <div class="education-highlights">
+              <span class="highlight-badge">Architecture Web</span>
+              <span class="highlight-badge">DevOps</span>
+              <span class="highlight-badge">Microservices</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-item slide-in-left">
+          <div class="education-year">2022 - 2024</div>
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="ion-android-desktop"></i>
+            </div>
+            <h3>Bachelor Informatique</h3>
+            <h4>Concepteur Designer UI</h4>
+            <p class="education-school">Icademie</p>
+            <p class="education-location"><i class="ion-location"></i> Paris, France</p>
+            <div class="education-highlights">
+              <span class="highlight-badge">UX/UI Design</span>
+              <span class="highlight-badge">Frontend</span>
+              <span class="highlight-badge">Ergonomie</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-item slide-in-right">
+          <div class="education-year">2020 - 2022</div>
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="ion-code-working"></i>
+            </div>
+            <h3>BTS Services Informatiques</h3>
+            <h4>Option SLAM (Solutions Logicielles et Applications Métiers)</h4>
+            <p class="education-school">Institut F2I</p>
+            <p class="education-location"><i class="ion-location"></i> Vincennes, France</p>
+            <div class="education-highlights">
+              <span class="highlight-badge">Développement</span>
+              <span class="highlight-badge">SQL</span>
+              <span class="highlight-badge">POO</span>
             </div>
           </div>
         </div>
@@ -291,9 +424,7 @@
     </div>
   </section>
   
-  <!-- Experience Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  <!-- Experience Section -->
   <section id="experience">
     <div class="container">
       <h1>Expérience Professionnelle</h1>
@@ -301,82 +432,125 @@
       <div class="row">
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-date">Nov 2021 - Mars 2022</div>
-            <h4>Développeur Informatique - BEIN DATA PARIS</h4>
+            <div class="timeline-date"><i class="ion-calendar"></i> Nov 2021 - Mars 2022</div>
+            <h4><i class="ion-briefcase"></i> Développeur Informatique</h4>
+            <p class="company-name">BEIN DATA PARIS</p>
             <p>Développement d'applications de gestion, maintenance de sites web avec Symfony, optimisation des bases de données et gestion des environnements de développement.</p>
+            <div class="experience-tags">
+              <span class="exp-tag">Symfony</span>
+              <span class="exp-tag">MySQL</span>
+              <span class="exp-tag">Git</span>
+            </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-date">Avril 2021 - Juin 2021</div>
-            <h4>Technicien Développement - EEMCI Meknès</h4>
+            <div class="timeline-date"><i class="ion-calendar"></i> Avril 2021 - Juin 2021</div>
+            <h4><i class="ion-briefcase"></i> Technicien Développement</h4>
+            <p class="company-name">EEMCI Meknès</p>
             <p>Création de sites web représentatifs, gestion des incidents techniques, installation et configuration de machines virtuelles et environnements de développement.</p>
+            <div class="experience-tags">
+              <span class="exp-tag">PHP</span>
+              <span class="exp-tag">HTML/CSS</span>
+              <span class="exp-tag">Virtualisation</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- Testimonials Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  <!-- Testimonials Section -->
   <section id="testimonial">
     <div class="container">
       <div class="quoteLoop">
         <blockquote class="quote">
-          <img src="https://media.istockphoto.com/id/1288129985/fr/vectoriel/image-manquante-dun-espace-r%C3%A9serv%C3%A9-de-personne.jpg?s=612x612&w=0&k=20&c=d99zJS1Y-GbDBIlkuJm77BJh_R9B3o7uGANn8jztiWQ=" width="100" height="100" alt=""/>
-          <h5>&nbsp;<br>
-            &ldquo;Un développeur rigoureux qui allie compétences techniques et sens du service client. Sa contribution au développement de nos outils internes a été remarquable.&rdquo;<br>
-            <small>Chef de Projet, EEMCI Meknès</small></h5>
+          <i class="ion-quote quote-icon"></i>
+          <h5>&ldquo;Un développeur rigoureux qui allie compétences techniques et sens du service client. Sa contribution au développement de nos outils internes a été remarquable.&rdquo;</h5>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="ion-person"></i>
+            </div>
+            <div class="author-info">
+              <p class="author-name">Chef de Projet</p>
+              <p class="author-company">EEMCI Meknès</p>
+            </div>
+          </div>
         </blockquote>
       </div>
     </div>
   </section>
   
-  <!-- Contact Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <h1>Contact</h1>
       <div class="block"></div>
       <div class="row">
-        <div class="six columns">
-          <div class="contact-info">
-            <h4>Coordonnées</h4>
-            <p><strong>Téléphone :</strong> 07 48 51 53 59</p>
-            <p><strong>Email :</strong> abderrahmanesaidi55@gmail.com</p>
-            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/abderrahmane-saidi103/" target="_blank">abderrahmane-saidi</a></p>
-            <p><strong>GitHub :</strong> <a href="https://www.github.com/Abderrahman-lab" target="_blank">Abderrahman-lab</a></p>
-            <p><strong>Localisation :</strong> Paris, France</p>
+        <div class="contact-wrapper">
+          <div class="contact-info-card">
+            <h3><i class="ion-ios-telephone"></i> Restons en Contact</h3>
+            <div class="contact-item">
+              <i class="ion-ios-telephone-outline"></i>
+              <div class="contact-details">
+                <strong>Téléphone</strong>
+                <p>07 48 51 53 59</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="ion-ios-email-outline"></i>
+              <div class="contact-details">
+                <strong>Email</strong>
+                <p><a href="mailto:abderrahmanesaidi55@gmail.com">abderrahmanesaidi55@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="ion-social-linkedin-outline"></i>
+              <div class="contact-details">
+                <strong>LinkedIn</strong>
+                <p><a href="https://www.linkedin.com/in/abderrahmane-saidi103/" target="_blank">abderrahmane-saidi</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="ion-social-github-outline"></i>
+              <div class="contact-details">
+                <strong>GitHub</strong>
+                <p><a href="https://www.github.com/Abderrahman-lab" target="_blank">Abderrahman-lab</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="ion-ios-location-outline"></i>
+              <div class="contact-details">
+                <strong>Localisation</strong>
+                <p>Compiègne, France</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- Footer Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  <!-- Footer Section -->
   <footer>
     <div class="container">
-      <div class="nine columns">
-        <p>&copy; 2025 Abderrahmane SAIDI - Développeur Full Stack. Tous droits réservés.</p>
-      </div>
-      <div class="three columns">
-        <a href="https://www.linkedin.com/in/abderrahmane-saidi" target="_blank">
-          <span class="typcn typcn-social-linkedin-circular socialIcons"></span>
-        </a>
-        <a href="https://www.github.com/Abderrahman-lab" target="_blank">
-          <span class="typcn typcn-social-github-circular socialIcons"></span>
-        </a>
-        <a href="mailto:abderrahmanesaidi55@gmail.com">
-          <span class="typcn typcn-mail socialIcons"></span>
-        </a>
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2025 Abderrahmane SAIDI - Développeur Full Stack</p>
+          <p class="footer-subtitle">Tous droits réservés.</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.linkedin.com/in/abderrahmane-saidi103/" target="_blank" class="social-link">
+            <i class="ion-social-linkedin"></i>
+          </a>
+          <a href="https://www.github.com/Abderrahman-lab" target="_blank" class="social-link">
+            <i class="ion-social-github"></i>
+          </a>
+          <a href="mailto:abderrahmanesaidi55@gmail.com" class="social-link">
+            <i class="ion-ios-email"></i>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
-    <script src="script.js"></script>
 
 </body>
 </html>
-
-
